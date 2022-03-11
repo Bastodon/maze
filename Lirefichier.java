@@ -8,10 +8,12 @@ import java.util.Scanner;
 public class Lirefichier
 {
 
+    private static Scanner sc;
+
     public static char[][] lireFichier(String file) throws FileNotFoundException
     {
         FileReader fr = new FileReader(file);
-        Scanner sc = new Scanner(fr);
+        sc = new Scanner(fr);
 
         //récupérer nombre de lignes
         int cptLig = 0;

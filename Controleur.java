@@ -6,11 +6,13 @@ import java.util.Scanner;
 
 public class Controleur
 {
+    private static Scanner sc;
+
     public static void main(String[] args) throws IOException
     {
         String fichier = "";
         System.out.print("Entrez le nom du fichier de labyrinthe et son format (exemple : fichier.txt) : ");
-        Scanner sc = new Scanner(System.in);
+        sc = new Scanner(System.in);
         fichier = sc.next();
         Lirefichier.lireFichier(fichier);
     }
