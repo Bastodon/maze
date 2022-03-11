@@ -10,10 +10,19 @@ public class Controleur
 
     public static void main(String[] args) throws IOException
     {
+        //Initialiser variables
         String fichier = "";
+        char[][] laby;
+
+        //Lire nom du fichier
         System.out.print("Entrez le nom du fichier de labyrinthe et son format (exemple : fichier.txt) : ");
         sc = new Scanner(System.in);
         fichier = sc.next();
-        Lirefichier.lireFichier(fichier);
+
+        //Lire contenu du fichier
+        laby = Lirefichier.lireFichier(fichier);
+
+        //Résoudre labyrinthe
+        
     }
 }
