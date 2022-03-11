@@ -1,16 +1,15 @@
 //-author : LERAY----//
 //-date : 11/03/2022-//
 
-import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.List;
+//import java.util.List;
+import java.util.Scanner;
 
 public class Lirefichier
 {
-    List list;
+    //List list;
     static String file = "fichier.txt";
-
     char[][] table = new char[500][];
 
     
@@ -20,16 +19,9 @@ public class Lirefichier
         String str = "";
         
         FileReader fr = new FileReader(file);
-        try (BufferedReader br = new BufferedReader(fr)) 
-        {
-            while((str = br.readLine())!=null)
-            {
-                    str.toCharArray();
-            }
-        }
+        Scanner scanner = new Scanner(fr);
+
+        
     }
 
-
-    
-    //char[] resultArray = list.toArray(new char[list.size()]);
 }
