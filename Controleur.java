@@ -20,9 +20,21 @@ public class Controleur
         fichier = sc.next();
 
         //Lire contenu du fichier
+        System.out.println("Labyrinthe :");
         laby = Lirefichier.lireFichier(fichier);
+        System.out.println("");
 
         //Résoudre labyrinthe
-        
+        System.out.println("Solution :");
+        laby = CleanMaze.clearMaze(laby);
+
+        for (int i = 0; i < laby.length; i++)
+        {
+            for (int y = 0; y < laby[i].length; y++)
+            {
+                System.out.print(""+ laby[i][y]);
+            }
+            System.out.println("");
+        }
     }
 }
