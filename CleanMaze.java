@@ -4,7 +4,10 @@ public class CleanMaze
     private static int[][] azimut = { { 0, 1 }, { 1, 0 }, { 0, -1 }, { -1, 0 } };
 
     public static char[][] clearMaze(char[][] table)
-    {    
+    {   
+        int[] col;
+        int[] lig;
+
         char [][] tab = table;
         
         //parcourir ensemble du tableau
@@ -20,5 +23,10 @@ public class CleanMaze
         }
 
         return tab;
+    }
+
+    public boolean culdesac()
+    {    
+        return false;
     }
 }
